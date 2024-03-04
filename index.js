@@ -79,6 +79,14 @@ btnNewGame.addEventListener("click", function() {
   score2 = 0
   renderScore(score1, score1El)
   renderScore(score2, score2El)
+  clearInterval(interval)
+  timeRunning = false
+  btnTimerStart.textContent = "Start"
+  if (timerCont.classList.contains("container-glow")) {
+    timerCont.classList.remove("container-glow")
+  }
+  time = startingMinutes * 60
+  updateCountdown()
 })
 
 btnTimerStart.addEventListener("click", function() {
