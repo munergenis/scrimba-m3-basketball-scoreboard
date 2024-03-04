@@ -1,0 +1,167 @@
+/* 
+green glow #42f560
+orange glow #f57542
+
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(#222, black);
+  font-family: Kode Mono;
+  font-size: 50px;
+}
+
+.scoreboard {
+  background: linear-gradient(165deg, #444, #222);
+  height: 500px;
+  width: 1000px;
+  margin: 50px auto;
+  border: 8px solid;
+  border-color: #888 #444 #444 #888;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+}
+
+.team-board, .timer-board {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-board {
+  width: 180px;
+  justify-content: end;
+  padding-bottom: 70px;
+}
+
+.title {
+  margin: 30px;
+  text-shadow: 5px 5px 10px black;
+}
+
+.title-timer {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.vs {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png);
+  background-size: cover;
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+.title-vs {
+  font-size: 30px;
+  text-shadow: 5px 5px 25px black, -5px -5px 25px black, 5px -5px 25px black, -5px 5px 25px black;
+}
+
+.score-container, .timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 180px;
+  width: 300px;
+  border: 12px inset #b58c7b;
+  border-radius: 30px 8px;
+}
+
+.container-glow {
+  box-shadow:
+/*     White glow */
+    0 0 2px #ffceba,
+    0 0 7px #ffceba,
+/*     Green glow */
+    0 0 2px #f57542,
+    0 0 22px #f57542;
+    /* 0 0 92px #f57542; */
+}
+
+.winner-glow {
+  box-shadow:
+/*     White glow */
+    0 0 2px #ffceba,
+    0 0 7px #ffceba,
+/*     Green glow */
+    0 0 2px #42f560,
+    0 0 42px #42f560;
+    /* 0 0 92px #42f560; */
+}
+
+.timer-container {
+  height: 90px;
+  width: 150px;
+  border: 6px inset #b58c7b;
+  border-radius: 15px 4px;
+  margin-bottom: 15px;
+}
+
+.timer {
+  font-size: 30px;
+}
+
+.score {
+  color: #fff;
+  text-shadow:
+/*     White glow */
+    0 0 2px #ffceba,
+    0 0 7px #ffceba,
+/*     Green glow */
+    0 0 2px #f57542,
+    0 0 42px #f57542,
+    0 0 92px #f57542;
+  background-color: black;
+}
+
+.btn-container {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-timer-container {
+  display: flex;
+  gap: 5px
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 30px;
+  color: white;
+  background-color: #222;
+  border: 3px outset #333;
+  border-radius: 15px 10px;
+  padding: 5px 13px;
+  transition: all 0.15s;
+}
+
+.btn-newgame {
+  width: 80px;
+  font-size: 20px;
+}
+
+.btn-timer {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+.btn:active {
+  border: 3px inset #333;
+}
